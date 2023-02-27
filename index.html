@@ -30,6 +30,7 @@
             placeholder="Enter the name of city"
             auto="off"
             class="city-input"
+            id="city-entry"
           />
           <input
             type="submit"
@@ -68,9 +69,11 @@
             <div class="col-3">
               <div class="col-12 current-temperature">
                 <strong><span id="current-temp">3 </span> </strong>
-                <button id="celsius-icon">°C</button>
-                <span class="seperator"> |</span>
-                <button id="fahrenheit-icon">°F</button>
+                <span id="temperature-icons">
+                  <span id="celsius-icon">°C</span>
+                  <span class="seperator"> |</span>
+                  <a href="#" id="fahrenheit-icon">°F</a></span
+                >
               </div>
               <div class="col-6">
                 <strong>High: <span id="high-temp">2</span> </strong>
