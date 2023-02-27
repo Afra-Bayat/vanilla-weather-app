@@ -1,0 +1,139 @@
+hr {
+  color: rgb(68, 68, 237);
+  border-width: 3px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Fredoka One", cursive;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+main {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+header img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  font-family: "Fredoka One", cursive;
+  color: rgb(101, 100, 100);
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+}
+
+.current-time {
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+}
+
+.card-img-top {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.card-text {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.seperator {
+  font-size: 20px;
+  color: #4444ed;
+}
+
+.container {
+  padding: 0;
+}
+
+.card {
+  background: rgb(230, 240, 247);
+  width: 100%;
+  height: auto;
+  padding: 2px;
+}
+
+.open-source {
+  margin-left: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+#celsius-icon {
+  background: white;
+  font-size: 30px;
+  color: #4444ed;
+  font-weight: bold;
+  margin-left: 10px;
+  border: none;
+}
+
+#current-temp {
+  font-size: 35px;
+  color: #4444ed;
+}
+
+#fahrenheit-icon {
+  background: white;
+  font-size: 30px;
+  color: #4444ed;
+  border: none;
+}
+
+#weather-app {
+  border: 1px solid rgb(202, 194, 194);
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#card .col-2 {
+  padding: 4px;
+}
+
+.card-text strong {
+  color: #0c0caf;
+}
+
+header .current-weather {
+  font-family: "PT Mono", monospace;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+form .city-input {
+  text-align: left;
+  padding: 7px;
+  border: 1px solid rgb(99, 99, 235);
+  border-radius: 10px;
+  margin: 5px auto 40px auto;
+  width: 60%;
+}
+
+.city-input:hover {
+  background-color: rgb(225, 237, 246);
+}
+
+main .col-3 {
+  padding: 0;
+  margin: 0;
+}
