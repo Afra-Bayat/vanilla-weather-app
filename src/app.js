@@ -62,6 +62,12 @@ function predictCurrentweather(response) {
   feelingTemp.innerHTML = Math.round(response.data.main.feels_like);
   let city = document.querySelector(".city-name");
   city.innerHTML = response.data.name;
+  let currentWeatherIcon = document.querySelector("#current-weather-img");
+  currentWeatherIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  currentWeatherIcon.setAttribute("src", response.data.weather[0].description);
 }
 
 //updating heading
