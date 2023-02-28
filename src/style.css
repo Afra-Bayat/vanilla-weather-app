@@ -5,13 +5,13 @@ hr {
 
 header {
   text-align: center;
-  margin-bottom: 25px;
+  margin: 30px auto 25px auto;
 }
 
 h1 {
   font-family: "Fredoka One", cursive;
-  font-weight: 800;
-  font-size: 50px;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 main {
@@ -22,6 +22,10 @@ main {
 header img {
   width: 100px;
   margin-bottom: 20px;
+}
+
+form {
+  margin: 5px auto 50px auto;
 }
 
 .timeline {
@@ -78,7 +82,7 @@ header img {
 }
 
 #current-temp {
-  font-size: 35px;
+  font-size: 40px;
   color: #4444ed;
 }
 
@@ -114,20 +118,18 @@ header img {
 header .current-weather {
   font-family: "PT Mono", monospace;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 25px;
 }
 
-form .city-input {
-  text-align: left;
-  padding: 7px;
-  border: 1px solid rgb(99, 99, 235);
-  border-radius: 10px;
-  margin: 5px auto 40px auto;
-  width: 60%;
+form #city-entry {
+  width: 100%;
+  background-color: rgb(230, 240, 247);
 }
 
-.city-input:hover {
-  background-color: rgb(225, 237, 246);
+form .col-7,
+.col-2,
+.col-3 {
+  padding-right: 0;
 }
 
 main .col-3 {

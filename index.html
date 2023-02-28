@@ -24,31 +24,39 @@
   <body>
     <div class="container">
       <div id="weather-app">
-        <form id="city-enquery-form">
-          <input
-            type="search"
-            placeholder="Enter the name of city"
-            auto="off"
-            class="city-input"
-            id="city-entry"
-          />
-          <input
-            type="submit"
-            value="search"
-            class="btn btn-outline-primary search-button"
-          />
-          <button
-            type="button"
-            class="btn btn-outline-primary"
-            id="current-location"
-          >
-            Current location
-          </button>
+        <form id="city-enquery-form" class="mb-3">
+          <div class="row">
+            <div class="col-7">
+              <input
+                type="search"
+                placeholder="Enter a city name"
+                autocomplete="off"
+                class="form-control search-input"
+                id="city-entry"
+              />
+            </div>
+            <div class="col-2">
+              <input
+                type="submit"
+                value="search"
+                class="btn btn-outline-primary search-button w=100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="current-location"
+              >
+                Current location
+              </button>
+            </div>
+          </div>
         </form>
         <header id="hearde">
           <h1 class="city-name">Tehran</h1>
           <div class="current-weather">Mostly cloudy</div>
-          <img src="#" alt="" id="current-weather-img" />
+          <img src="" alt="" id="current-weather-img" />
         </header>
         <main>
           <div class="row">

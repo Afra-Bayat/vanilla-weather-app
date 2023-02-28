@@ -67,7 +67,7 @@ function predictCurrentweather(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  currentWeatherIcon.setAttribute("src", response.data.weather[0].description);
+  currentWeatherIcon.setAttribute("alt", response.data.weather[0].icon);
 }
 
 //updating heading
