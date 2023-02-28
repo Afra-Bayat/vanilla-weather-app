@@ -5,7 +5,7 @@ hr {
 
 header {
   text-align: center;
-  margin: 30px auto 25px auto;
+  margin: 30px auto 15px auto;
 }
 
 h1 {
@@ -21,7 +21,7 @@ main {
 
 header img {
   width: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 form {
@@ -81,6 +81,30 @@ form {
   padding: 5px;
 }
 
+.card-text strong {
+  color: #0c0caf;
+}
+
+.current-weather:first-letter {
+  text-transform: capitalize;
+}
+
+#fahrenheit-icon {
+  text-decoration: none;
+}
+
+#celsius-icon {
+  text-decoration: none;
+}
+
+#fahrenheit-icon:hover {
+  text-decoration: underline;
+}
+
+#celsius-icon:hover {
+  text-decoration: underline;
+}
+
 #current-temp {
   font-size: 40px;
   color: #4444ed;
@@ -107,12 +131,14 @@ form {
   line-height: 20px;
 }
 
-.card-text strong {
-  color: #0c0caf;
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
 }
 
-.current-weather:first-letter {
-  text-transform: capitalize;
+.active:hover {
+  text-decoration: none;
 }
 
 header .current-weather {

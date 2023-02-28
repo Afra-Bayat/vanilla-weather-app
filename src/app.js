@@ -62,6 +62,7 @@ function predictCurrentweather(response) {
   feelingTemp.innerHTML = Math.round(response.data.main.feels_like);
   let city = document.querySelector(".city-name");
   city.innerHTML = response.data.name;
+  celsiusTemp = response.data.main.temp;
   let currentWeatherIcon = document.querySelector("#current-weather-img");
   currentWeatherIcon.setAttribute(
     "src",
@@ -87,22 +88,6 @@ function updatingHeading(event) {
 let locationEntryForm = document.querySelector("#city-enquery-form");
 locationEntryForm.addEventListener("submit", updatingHeading);
 
-//changing temperature unit
-let fahrenheitTemp = document.querySelector("#fahrenheit-icon");
-let celsiusTemp = document.querySelector("#celsius-icon");
-let currentTemp = document.querySelector("#current-temp");
-document
-  .querySelectorAll("#fahrenheit-icon, #celsius-icon")
-  .forEach(function (button) {
-    button.addEventListener("click", function (e) {
-      if (button === fahrenheitTemp) {
-        currentTemp.innerHTML = 37;
-      } else {
-        currentTemp.innerHTML = 3;
-      }
-    });
-  });
-
 //predicting current location weather
 function predictionCurrentLocation(position) {
   let lat = position.coords.latitude;
@@ -121,3 +106,26 @@ function showPosition(event) {
 }
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", showPosition);
+
+//changing temperature unit
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#current-temp");
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32.5;
+  tempElement.innerHTML = Math.round(fahrenheitTemp);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+}
+let celsiusTemp = null;
+let fahrenheitLink = document.querySelector("#fahrenheit-icon");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#current-temp");
+  tempElement.innerHTML = Math.round(celsiusTemp);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+}
+let celsiusLink = document.querySelector("#celsius-icon");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
